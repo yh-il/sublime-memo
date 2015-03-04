@@ -100,6 +100,4 @@ HTML CSS JS Prettify
 InputSequence(連番入力のやつ)→https://github.com/kazu1107/InputSequence
 GitGutter(Gitを参照して変更箇所を表示してくれるやつ)
 SyncedSideBar(現在開いているファイルとサイドバーのファイルを一致させて表示してくれるやつ)
-
-
-
+YUI Compressor(CSS,JSのMinify化するやつ（ctrl + Bでコンパイル）※JAVAが必要)
