@@ -1,18 +1,18 @@
 =====================================================================================
-šSublime Text2 ‚ÌPackage Control
+â˜…Sublime Text2 ã®Package Control
 import urllib2,os; pf='Package Control.sublime-package'; ipp = sublime.installed_packages_path(); os.makedirs( ipp ) if not os.path.exists(ipp) else None; urllib2.install_opener( urllib2.build_opener( urllib2.ProxyHandler( ))); open( os.path.join( ipp, pf), 'wb' ).write( urllib2.urlopen( 'http://sublime.wbond.net/' +pf.replace( ' ','%20' )).read()); print( 'Please restart Sublime Text to finish installation')
 
-šSublime Text3 ‚ÌPackage Control
+â˜…Sublime Text3 ã®Package Control
 import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())
 
 ====================================================================================
-šŠÖ”‚ÌéŒ¾Œ³‚ÉƒWƒƒƒ“ƒv‚·‚éİ’è
-sublime text3‚©‚ç‚ÌV‹@”\‚Å‚ ‚égoto_definition‚Æ‚¢‚¤ƒRƒ}ƒ“ƒh‚ğİ’è‚·‚ê‚Î‚æ‚¢–Í—lB
-ƒfƒtƒHƒ‹ƒg‚Å‚ÍF12‚Éİ’è‚³‚ê‚Ä‚¢‚ÄAƒvƒƒWƒFƒNƒg“àŒŸõ‚µ‚©‘Î‰‚µ‚Ä‚¢‚È‚¢‚æ‚¤‚Å‚·‚ªAg‚¦‚»‚¤‚Å‚·B
+â˜…é–¢æ•°ã®å®£è¨€å…ƒã«ã‚¸ãƒ£ãƒ³ãƒ—ã™ã‚‹è¨­å®š
+sublime text3ã‹ã‚‰ã®æ–°æ©Ÿèƒ½ã§ã‚ã‚‹goto_definitionã¨ã„ã†ã‚³ãƒãƒ³ãƒ‰ã‚’è¨­å®šã™ã‚Œã°ã‚ˆã„æ¨¡æ§˜ã€‚
+ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆã§ã¯F12ã«è¨­å®šã•ã‚Œã¦ã„ã¦ã€ãƒ—ãƒ­ã‚¸ã‚§ã‚¯ãƒˆå†…æ¤œç´¢ã—ã‹å¯¾å¿œã—ã¦ã„ãªã„ã‚ˆã†ã§ã™ãŒã€ä½¿ãˆãã†ã§ã™ã€‚
 
-šƒƒjƒ…[‚Ì Preferences > KeyBindings User ‚ğŠJ‚¢‚ÄˆÈ‰º‚ğ’Ç‹LB
+â˜…ãƒ¡ãƒ‹ãƒ¥ãƒ¼ã® Preferences > KeyBindings User ã‚’é–‹ã„ã¦ä»¥ä¸‹ã‚’è¿½è¨˜ã€‚
 
-//Goto CSS Declaration‚Ìİ’è
+//Goto CSS Declarationã®è¨­å®š
  {
     "keys": ["ctrl+alt+."], "command": "goto_css_declaration",
     "args": {"goto": "next"}
@@ -22,23 +22,23 @@ sublime text3‚©‚ç‚ÌV‹@”\‚Å‚ ‚égoto_definition‚Æ‚¢‚¤ƒRƒ}ƒ“ƒh‚ğİ’è‚·‚ê‚Î‚æ‚¢–Í—l
     "args": {"goto": "prev"}
  },
 
- // ã‚Ìs‚Æ“ü‚ê‘Ö‚¦‚é
+ // ä¸Šã®è¡Œã¨å…¥ã‚Œæ›¿ãˆã‚‹
 { "keys": ["alt+up"], "command": "swap_line_up" },
-// ‰º‚Ìs‚Æ“ü‚ê‘Ö‚¦‚é
+// ä¸‹ã®è¡Œã¨å…¥ã‚Œæ›¿ãˆã‚‹
 { "keys": ["alt+down"], "command": "swap_line_down" },
 
-// F3‚ÅŠÖ”‚ÌéŒ¾Œ³‚ÉƒWƒƒƒ“ƒv
+// F3ã§é–¢æ•°ã®å®£è¨€å…ƒã«ã‚¸ãƒ£ãƒ³ãƒ—
 { "keys": ["f3"], "command": "goto_definition" },
-// alt+¶‚Å–ß‚é
+// alt+å·¦ã§æˆ»ã‚‹
 { "keys": ["alt+left"], "command": "jump_back" },
-// alt+‰E‚Å–ß‚Á‚½‚Ì‚ğ‚Ü‚½i‚ß‚é
+// alt+å³ã§æˆ»ã£ãŸã®ã‚’ã¾ãŸé€²ã‚ã‚‹
 { "keys": ["alt+right"], "command": "jump_forward" },
 
 =====================================================================================
-šŠÖ”ƒWƒƒƒ“ƒv‚ğalt+Click‚Ås‚¤
-Preferences > Browse Packages‚Åİ’èƒtƒ@ƒCƒ‹‚ª“ü‚Á‚Ä‚¢‚éƒfƒBƒŒƒNƒgƒŠ‚ğŠJ‚¢‚Ä
-X‚ÉUserƒfƒBƒŒƒNƒgƒŠ‚Ì’†‚ÉDefault (Windows).sublime-mousemap‚Æ‚¢‚¤ƒtƒ@ƒCƒ‹‚ğì¬‚µA
-’†‚ÉˆÈ‰º‚Ìİ’è‚ğ‘‚­‚Æ”½‰f‚³‚ê‚Ü‚µ‚½B
+â˜…é–¢æ•°ã‚¸ãƒ£ãƒ³ãƒ—ã‚’alt+Clickã§è¡Œã†
+Preferences > Browse Packagesã§è¨­å®šãƒ•ã‚¡ã‚¤ãƒ«ãŒå…¥ã£ã¦ã„ã‚‹ãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒªã‚’é–‹ã„ã¦
+æ›´ã«Userãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒªã®ä¸­ã«Default (Windows).sublime-mousemapã¨ã„ã†ãƒ•ã‚¡ã‚¤ãƒ«ã‚’ä½œæˆã—ã€
+ä¸­ã«ä»¥ä¸‹ã®è¨­å®šã‚’æ›¸ãã¨åæ˜ ã•ã‚Œã¾ã—ãŸã€‚
 
 [
     {
@@ -50,7 +50,7 @@ Preferences > Browse Packages‚Åİ’èƒtƒ@ƒCƒ‹‚ª“ü‚Á‚Ä‚¢‚éƒfƒBƒŒƒNƒgƒŠ‚ğŠJ‚¢‚Ä
     },
 ]
 =====================================================================================
-šPreference > Setting User (ƒ†[ƒU[İ’è)
+â˜…Preference > Setting User (ãƒ¦ãƒ¼ã‚¶ãƒ¼è¨­å®š)
 {
 	"afn_insert_width_first": true,
 	"auto_complete": true,
@@ -73,14 +73,14 @@ Preferences > Browse Packages‚Åİ’èƒtƒ@ƒCƒ‹‚ª“ü‚Á‚Ä‚¢‚éƒfƒBƒŒƒNƒgƒŠ‚ğŠJ‚¢‚Ä
 }
 
 =====================================================================================
-šBracketHighlighter‚Ìİ’è
+â˜…BracketHighlighterã®è¨­å®š
 
 {
-  "ignore_threshold": true // ƒT[ƒ`”ÍˆÍ‚ğŒÀ’è‚µ‚È‚¢
+  "ignore_threshold": true // ã‚µãƒ¼ãƒç¯„å›²ã‚’é™å®šã—ãªã„
 }
 
 =====================================================================================
-š‚¢‚Â‚à“ü‚ê‚éƒpƒbƒP[ƒW
+â˜…ã„ã¤ã‚‚å…¥ã‚Œã‚‹ãƒ‘ãƒƒã‚±ãƒ¼ã‚¸
 IMESupport
 ConvertToUTF8
 Goto css Declaration
@@ -94,10 +94,12 @@ jQuery
 HTML5
 Better JavaScript
 DocBlocker
-LiveStyle(ChromeŠg’£‹@”\‚àƒCƒ“ƒXƒg[ƒ‹‚·‚é•K—v‚ ‚è)
+LiveStyle(Chromeæ‹¡å¼µæ©Ÿèƒ½ã‚‚ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ã™ã‚‹å¿…è¦ã‚ã‚Š)
 View in Brouser
 HTML CSS JS Prettify
-InputSequence(˜A”Ô“ü—Í‚Ì‚â‚Â)¨https://github.com/kazu1107/InputSequence
-GitGutter(Git‚ğQÆ‚µ‚Ä•ÏX‰ÓŠ‚ğ•\¦‚µ‚Ä‚­‚ê‚é‚â‚Â)
-SyncedSideBar(Œ»İŠJ‚¢‚Ä‚¢‚éƒtƒ@ƒCƒ‹‚ÆƒTƒCƒhƒo[‚Ìƒtƒ@ƒCƒ‹‚ğˆê’v‚³‚¹‚Ä•\¦‚µ‚Ä‚­‚ê‚é‚â‚Â)
-YUI Compressor(CSS,JS‚ÌMinify‰»‚·‚é‚â‚Âictrl + B‚ÅƒRƒ“ƒpƒCƒ‹j¦JAVA‚ª•K—v)
+InputSequence(é€£ç•ªå…¥åŠ›ã®ã‚„ã¤)â†’https://github.com/kazu1107/InputSequence
+GitGutter(Gitã‚’å‚ç…§ã—ã¦å¤‰æ›´ç®‡æ‰€ã‚’è¡¨ç¤ºã—ã¦ãã‚Œã‚‹ã‚„ã¤)
+SyncedSideBar(ç¾åœ¨é–‹ã„ã¦ã„ã‚‹ãƒ•ã‚¡ã‚¤ãƒ«ã¨ã‚µã‚¤ãƒ‰ãƒãƒ¼ã®ãƒ•ã‚¡ã‚¤ãƒ«ã‚’ä¸€è‡´ã•ã›ã¦è¡¨ç¤ºã—ã¦ãã‚Œã‚‹ã‚„ã¤)
+YUI Compressor(CSS,JSã®MinifyåŒ–ã™ã‚‹ã‚„ã¤ï¼ˆctrl + Bã§ã‚³ãƒ³ãƒ‘ã‚¤ãƒ«ï¼‰â€»JAVAãŒå¿…è¦)
+Color Highlighter(#ff00aaã¨ã‹ã‚’å®Ÿéš›ã®è‰²ã§è¡¨ç¤ºã—ã¦ãã‚Œã‚‹ã€ã‚«ãƒ©ãƒ¼ãƒ”ãƒƒã‚«ãƒ¼æ©Ÿèƒ½ã‚‚ã¤ã„ã¦ã‚‹)
+Jadeï¼ˆJadeã®ã‚·ãƒ³ã‚¿ãƒƒã‚¯ã‚¹ãƒã‚¤ãƒ©ã‚¤ãƒˆï¼‰
