@@ -106,3 +106,4 @@ SublimeLinter
 SublimeLinter-jshint(SublimeLinterとセットで入れて、npm install -g jshintも実行する)
 Sass
 Sass Build
+WebdriverIO(自動テスト用)
