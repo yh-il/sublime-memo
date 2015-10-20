@@ -7,6 +7,9 @@ git add .
 # ブランチ作成と切り替え（★はブランチ名）
 git checkout -b ★
 
+# リモートブランチをローカルにチェックアウト
+git checkout -b ★ origin/★
+
 # ブランチ切り替え(★はブランチ名)
 git checkout ★
 
@@ -17,7 +20,11 @@ git branch origin/dev
 git branch -a
 
 # ブランチ削除（★はブランチ名）
-git branch -D ★
+git branch -d ★
+
+# リモートブランチ削除（★はブランチ名）（ローカルで削除→リモートに反映）
+git branch -d ★
+git push origin :★
 
 # ★のリビジョンまで戻す
 git reset --hard ★
