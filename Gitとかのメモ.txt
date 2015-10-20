@@ -24,7 +24,7 @@ git branch -D ★
 
 # リモートブランチ削除（★はブランチ名）（ローカルで削除→リモートに反映）
 git branch -D ★
-git push --delete origin :★
+git push origin :★
 
 # ★のリビジョンまで戻す
 git reset --hard ★
