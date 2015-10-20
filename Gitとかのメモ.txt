@@ -1,0 +1,2 @@
+﻿# ★～◆のリビジョンの差分ファイルを出力する
+git diff ★..◆ --name-only | git checkout-index --prefix=./sabun/ --stdin
