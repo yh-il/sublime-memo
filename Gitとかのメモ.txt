@@ -20,11 +20,11 @@ git branch origin/dev
 git branch -a
 
 # ブランチ削除（★はブランチ名）
-git branch -d ★
+git branch -D ★
 
 # リモートブランチ削除（★はブランチ名）（ローカルで削除→リモートに反映）
-git branch -d ★
-git push origin :★
+git branch -D ★
+git push --delete origin :★
 
 # ★のリビジョンまで戻す
 git reset --hard ★
