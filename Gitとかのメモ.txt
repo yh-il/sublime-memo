@@ -59,3 +59,15 @@ git tag ★
 
 #　タグを付ける（過去のコミットに）
 git tag タグ名 リビジョン名
+
+
+# 変更を退避させる
+git stash
+
+# 退避させた変更を見る
+git stash list
+
+# 退避させた変更を復活させる
+git stash pop
+git stash pop stash@{0}
+
