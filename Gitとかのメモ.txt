@@ -48,3 +48,14 @@ git reset --hard ★
 # ★～◆のリビジョンの差分ファイルを出力する
 git diff ★..◆ --name-only | git checkout-index --prefix=./sabun/ --stdin
 
+
+# リモートのタグを削除する
+git push --delete origin refs/tags/★
+
+
+#　タグを付ける
+git tag ★
+
+
+#　タグを付ける（過去のコミットに）
+git tag タグ名 リビジョン名
