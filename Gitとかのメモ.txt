@@ -1,17 +1,24 @@
-﻿# 1行でlogを5件表示
+﻿
+
+# 1行でlogを5件表示
 git log --oneline -5
+
 
 # 追加したファイルを全部追加
 git add .
 
+
 # ブランチ作成と切り替え（★はブランチ名）
 git checkout -b ★
+
 
 # リモートブランチをローカルにチェックアウト
 git checkout -b ★ origin/★
 
+
 # ブランチ切り替え(★はブランチ名)
 git checkout ★
+
 
 # ブランチ表示
 git branch
@@ -19,19 +26,24 @@ git branch origin/master
 git branch origin/dev
 git branch -a
 
+
 # ブランチ削除（★はブランチ名）
 git branch -D ★
+
 
 # リモートブランチ削除（★はブランチ名）（ローカルで削除→リモートに反映）
 git branch -D ★
 git push origin :★
 
+
 # ★のリビジョンまで戻す
 git reset --hard ★
+
 
 # 戻しちゃったリビジョンを更に★まで戻す（間違ったリビジョンまで戻しちゃった時はreflogで消す前の履歴を見て、更にresetすることでresetする前のリビジョンに戻すことができる）
 git reflog -n 4
 git reset --hard ★
+
 
 # ★～◆のリビジョンの差分ファイルを出力する
 git diff ★..◆ --name-only | git checkout-index --prefix=./sabun/ --stdin
