@@ -40,6 +40,7 @@ import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.
 * SublimeLinter-jshint(SublimeLinterとセットで入れて、npm install -g jshintも実行する)
 * Sass
 * Sass Build
+* Bootstrap 3 Snipets
 
 ###キー設定
 
