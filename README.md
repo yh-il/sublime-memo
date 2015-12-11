@@ -41,6 +41,7 @@ import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.
 * Sass
 * Sass Build
 * Bootstrap 3 Snipets
+* eCSStractor(クラスをまとめて書き出してくれるやつ)
 
 ###キー設定
 
