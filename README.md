@@ -110,7 +110,8 @@ Preference > Setting User (ユーザー設定)
 	"scroll_past_end": true,
 	"show_encoding": true,
 	"show_line_endings": true,
-	"theme": "Flatland Dark.sublime-theme"
+	"theme": "Flatland Dark.sublime-theme",
+	"open_files_in_new_window": false
 }
 ```
 
