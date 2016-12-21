@@ -120,3 +120,10 @@ Preference > Setting User (ユーザー設定)
   "ignore_threshold": true // サーチ範囲を限定しない
 }
 ```
+
+
+##Color Scheme
+```
+One Dark(Atomのやつ)
+```
+
